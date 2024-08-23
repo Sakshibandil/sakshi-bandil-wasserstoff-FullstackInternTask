@@ -45,7 +45,6 @@ const WeatherCard = ({
   }, [iconString])
 
   useEffect(() => {
-    // Initialize currentTemp with the correct unit
     setCurrentTemp(temperature)
   }, [temperature])
 
@@ -59,7 +58,7 @@ const WeatherCard = ({
         setUnit('C')
       }
     } else {
-      setCurrentTemp('N/A')  // Set to 'N/A' if temperature is not a number
+      setCurrentTemp('N/A')  
     }
   }
 

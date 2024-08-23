@@ -11,7 +11,7 @@ export const StateContextProvider = ({ children }) => {
 
     // Fetch API
     const fetchWeather = useCallback(async () => {
-        const apiKey = 'DH829HVXPXA3CAG75EK6ZL4W8';  // Use your actual API key here
+        const apiKey = 'DH829HVXPXA3CAG75EK6ZL4W8';  
         const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${place}?key=${apiKey}`;
 
         try {
