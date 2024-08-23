@@ -10,7 +10,7 @@ import wind from '../assets/icons/windy.png'
 import '../index.css'
 
 const WeatherCard = ({
-  temperature = 0,  // Default to 0 if temperature is not provided
+  temperature = 0, 
   windspeed,
   humidity,
   place,
@@ -21,7 +21,7 @@ const WeatherCard = ({
   const [icon, setIcon] = useState(sun)
   const { time } = useDate()
 
-  const [unit, setUnit] = useState('C') // 'C' for Celsius, 'F' for Fahrenheit
+  const [unit, setUnit] = useState('C') 
   const [currentTemp, setCurrentTemp] = useState(temperature)
 
   useEffect(() => {
